@@ -1,0 +1,92 @@
+{% extends 'fundation.html' %}
+
+{% block head %}
+   <title> Home </title>
+{% endblock %}
+
+{%block body%}
+
+   <div class="jumbotron text-center", background-color = orange>
+   
+      <h1>Fly a Boeing-747 at home</h1>
+   
+   </div>
+   <!-- The Slideshow area, carousel -->
+   <div id="demo" class="carousel slide" data-ride="carousel">
+      <!-- Indicatiors-->
+      <ul class="carousel-indicators ">
+         <li data-target="#demo" data-slide-to="0" class="active"></li>
+         <li data-target="#demo" data-slide-to="1"></li>
+         <li data-target="#demo" data-slide-to="2"></li>
+      </ul> 
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+         <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1484320775925-2609d111d8b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2549&q=80" 
+              class ="img-fluid" alt="Airplane One">
+         </div>
+         <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1509541206217-cde45c41aa6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2551&q=80" 
+              class ="img-fluid" alt="Cockpit One">
+         </div>
+         <div class="carousel-item">
+            <img src="https://images.unsplash.com/flagged/photo-1579750481098-8b3a62c9b85d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2542&q=80" 
+            alt="New York" class ="img-fluid">
+         </div>
+      </div>
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev lefta" href="#demo" data-slide="prev">
+         <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next righta" href="#demo" data-slide="next">
+         <span class="carousel-control-next-icon"></span>
+      </a>
+   </div>
+
+   <div class = "text-center">
+     
+      <div class = "transbox text-left">
+         <p> When you were young, you must dream  to be a pilot and fly freely over the sky.. </p>
+         
+         <p>However not everybody can become an aircraft pilot, it is not as easy. It is very time consuming and costly as we know. Lucky,
+         the Microsoft Fly Simulator has provided us with an economical way to fly a plane, even a Boeing 747 at home.</p>
+         <P>
+         <p>But, isn't a bit lame to just watch a computer and pretend we are flying a real plane. 
+         we have simulator which is more cost-effective and safer to catch your dream.</p><hr> 
+         </p>
+      </div>
+      
+   </div>
+
+   <div>
+      <!-- Dispaly two background picture in line-->
+      {% comment %} <div class = "row">
+         <div class = "col-md-6">
+            <img src = "https://images.unsplash.com/photo-1484320775925-2609d111d8b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2549&q=80" 
+            class = "img-fluid" alt="Airplane One">
+         </div>
+         <div class = "col-md-6">
+            <img src = "https://images.unsplash.com/photo-1509541206217-cde45c41aa6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2551&q=80" 
+            class = "img-fluid" alt="Cockpit Two">
+         </div>
+      </div>   
+      <br> {% endcomment %}
+      <!--Link to the Registration pages-->
+      <div>
+         <a href="/login/" class="btn btn-primary">Regist your interest</a>
+         <hr>
+      </div>
+   </div>
+
+
+   {% comment %} <div>
+      <form action ="/login/" method = "post"> {% csrf_token %}
+         <input type='submit'  value = "Regist your interest"/>
+      </form>
+   </div> {% endcomment %}
+{% comment %} <div>
+   <img src = "file:///Users/junli/Desktop/Python_Projects/Cockpit/template/Home/image/airplane.jpg" alt="Airplane One">
+ </div> {% endcomment %}
+
+{%endblock%}

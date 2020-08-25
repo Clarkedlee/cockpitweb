@@ -1,0 +1,62 @@
+{% extends 'fundation.html' %}
+
+{% block head %}
+        <title> Regist Your Interest </title>
+{% endblock %}
+
+{%block body%}
+    <div class="jumbotron text-center", background-color = orange>
+   
+      <h1>Build a cockpit for your at home fly simulator</h1>
+   
+   </div>
+
+    <div class = "transbox">
+        <h1> Please fill up the from belows:</h1>
+        {% comment %} enter the information{% endcomment %}
+        <h2>Please finish all the information belows</h2>
+        <!--Use form group to organise form structure-->
+        <form action="/addmessage/" method= "post">{% csrf_token %}
+            <div class="row">
+                <div class = "form-group, col-md-6">
+                    <label for = "first_name"> First Name: </label>
+                    <input type="text" id = "first_name" name="first_name" placeholder="First Name"
+                    class="form-control"/>
+                </div>
+
+                <div class = "form-group, col-md-6">
+                    <label for = "last_name"> Last Name: </label>
+                    <input type="text" id = "last_name" name="last_name" placeholder="Last Name"
+                    class="form-control"/>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+
+                <div class = "form-group, col-md-6">
+                    <label for = "uemail"> E-mail: </label>
+                    <input type="e-mail" name="uemail" placeholder="example@emil.com" 
+                    class="form-control"/> 
+                </div>
+
+                <div class = "form-group, col-md-6">
+                    <label for = "rrp"> How much will you pay for this? </label>
+                    <input type="number" name="rrp" class="form-control" 
+                     placeholder ="The value of the product"/>
+                </div>
+            </div>
+            <hr>
+            
+            <div class = "form-group, col-md">
+                <label for = "umsg"> Your Comments: </label> <br>
+                <textarea name="umsg" cols="100" rows = "20"></textarea>
+            </div>
+            <br>
+            <div class = "form-group col-md">
+                <input type="submit" value="Submit"/>
+        </form>
+
+    </div>
+
+{%endblock%}

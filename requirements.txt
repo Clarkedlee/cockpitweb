@@ -1,0 +1,6 @@
+asgiref==3.2.10
+Django==3.0
+pytz==2020.1
+sqlparse==0.3.1
+
+'$@)j_lhn9)!b!^i8c1o$2fo8+6auhs(htioc6cw&v&0v*gn)#='

@@ -1,0 +1,135 @@
+<!-- Created on 1 Aug 2020 in NZ -->
+<html>
+    <head>
+        <!--The Boostrap frame work-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="icon" href="https://image.flaticon.com/icons/svg/3208/3208091.svg" sizes="any" type="image/svg+xml"> 
+        
+        <!-- Global configuration for the website-->
+        <style>
+            /* Box-sizing*/
+            html {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            *, *:before, *:after {
+            -webkit-box-sizing: inherit;
+            -moz-box-sizing: inherit;
+            box-sizing: inherit;
+            }
+
+            /* The detail content style */
+            body{text-align: auto; 
+                background-image:url(https://images.unsplash.com/photo-1542302525-62b7757e0c85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2688&q=80); 
+                background-color: rgba(255,255,255,0.2);
+                background-blend-mode: lighten;
+                background-size:cover;
+            }
+            
+            div.background {
+                background-color:#BFB6AD;
+                border: 1px solid;
+            }
+
+            div.transbox {
+                margin: 0px;
+                background-color: #ffffff;
+                border: 1px solid;
+                opacity: 0.7;
+            }
+
+            div.transbox p {
+                margin: 3%;
+                font-weight: bold;
+                color: #000000;
+            }
+            /* the tag style property*/
+            a{
+                position:relative;
+                display: flex;
+                /*justify-content: center;*/
+                left: 43%;
+                margin:1%;
+            }
+            /* custome tag property, CSS is objects orintated, this only for left slide control tag*/
+            a.lefta{
+                position:absolute;
+                display: flex;
+                /*justify-content: center;*/
+                left: 1%;
+                margin:1%;
+            }   
+            /* custome tag property, CSS is objects orintated, this only for right slide control tag*/
+            a.righta{
+                position:absolute;
+                display: flex;
+                /*justify-content: center;*/
+                left: 84%;
+                margin:1%;
+            }  
+
+            .jumbotron { 
+                background-color:#252A25;
+                background-size:auto;
+                color: white;
+            }
+            /* Make the image fully reponsive and better resulotion*/
+            img { 
+	            image-rendering: -webkit-optimize-contrast;
+                max-width: 100%;
+                height: auto;
+            }
+
+
+            h2{color:red;}
+           
+        </style>
+        <!-- The head template {% comment %} h1{background-color:lightblue;text-align:center;}  
+          div{
+                background-color: #ffffff;
+                
+            }
+
+            div.transbox{
+                background-color: #ffffff;
+                opacity: 0.5;
+            }
+            
+            div.transbox p{
+                margin: 5%;
+                font-weight: bold;
+                color: #000000;
+            }
+            
+            .jumbotron { 
+                background-image:url(https://images.unsplash.com/photo-1542302525-62b7757e0c85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2688&q=80); 
+                background-color: rgba(255,255,255,0.2);
+                background-blend-mode: lighten;
+                background-size:auto;
+                color: black;
+            }
+
+        {% endcomment %}-->
+        {%block head%}
+            <title>Page Title</title>
+        {% endblock %}
+
+    </head>
+    <!--   Body template -->
+    <body> 
+        <div class = "container">
+            
+            {% block body%}
+                <h1>My First Heading</h1>
+                <p>My first paragraph.</p>
+            {% endblock  %}
+         <div>
+        <!-- Many of our components require the use of JavaScript to function, place following just before </body>-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
