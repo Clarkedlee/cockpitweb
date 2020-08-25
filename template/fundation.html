@@ -2,6 +2,11 @@
 <html>
     <head>
         <!--The Boostrap frame work-->
+        <meta charset="UTF-8">
+        <meta name="description" content="This landing page for a Cockpit DIY project, it aimed to find out how many people will be interested">
+        <meta name="keywords" content="Flight simulation, Cockpit, Cockpit DIY, Microsoft Flight Simulator, 
+            X-Plane Flight Simulator, Google Earth Flight Simulator">
+        <meta name="author" content="Clarke Lee">
         <meta name="viewport" content="width=device-width, initial-scale=1">        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="icon" href="https://image.flaticon.com/icons/svg/3208/3208091.svg" sizes="any" type="image/svg+xml"> 
@@ -20,7 +25,7 @@
             -moz-box-sizing: inherit;
             box-sizing: inherit;
             }
-
+            
             /* The detail content style */
             body{text-align: auto; 
                 background-image:url(https://images.unsplash.com/photo-1542302525-62b7757e0c85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2688&q=80); 
@@ -30,7 +35,7 @@
             }
             
             div.background {
-                background-color:#BFB6AD;
+                background-color:#BFB6AD
                 border: 1px solid;
             }
 
@@ -46,14 +51,16 @@
                 font-weight: bold;
                 color: #000000;
             }
-            /* the tag style property*/
+
             a{
                 position:relative;
                 display: flex;
                 /*justify-content: center;*/
                 left: 43%;
+                width: auto;
                 margin:1%;
             }
+
             /* custome tag property, CSS is objects orintated, this only for left slide control tag*/
             a.lefta{
                 position:absolute;
@@ -69,7 +76,7 @@
                 /*justify-content: center;*/
                 left: 84%;
                 margin:1%;
-            }  
+            }     
 
             .jumbotron { 
                 background-color:#252A25;
@@ -84,7 +91,22 @@
             }
 
 
-            h2{color:red;}
+            h2{
+                margin:3%;
+                color:red;
+            }
+
+            h3{
+                margin:3%;
+            }
+
+
+            footer {
+                text-align: center;
+                padding: 3px;
+                /*background-color: DarkSalmon;*/
+                color: white;
+            }
            
         </style>
         <!-- The head template {% comment %} h1{background-color:lightblue;text-align:center;}  
@@ -126,7 +148,14 @@
                 <h1>My First Heading</h1>
                 <p>My first paragraph.</p>
             {% endblock  %}
-         <div>
+        </div>
+        
+        {% comment %} <div class = "container">
+            <footer>
+                <p>Author: Clarke Lee <br>
+                <a href="clarke@examole ">clarke@example.com</a></p>
+            </footer>
+        </div>  {% endcomment %}
         <!-- Many of our components require the use of JavaScript to function, place following just before </body>-->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
