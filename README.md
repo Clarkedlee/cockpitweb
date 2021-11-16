@@ -13,4 +13,4 @@ All secrete has been removed.
 ## The Home page
 
 ## Feedback entry page
-
+![The home Page](https://github.com/Clarkedlee/cockpitweb/blob/07b1146686678f69f625c791ca9aa9175297d090/img/Screen%20Shot%202021-11-16%20at%206.45.00%20PM.png)
